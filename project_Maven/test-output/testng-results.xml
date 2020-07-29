@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-26T14:47:26 IST" name="Default suite" finished-at="2020-07-26T14:47:51 IST" duration-ms="25309">
+  <suite started-at="2020-07-29T12:19:30 IST" name="Default suite" finished-at="2020-07-29T12:19:48 IST" duration-ms="17593">
     <groups>
     </groups>
-    <test started-at="2020-07-26T14:47:26 IST" name="Default test" finished-at="2020-07-26T14:47:51 IST" duration-ms="25309">
+    <test started-at="2020-07-29T12:19:30 IST" name="Default test" finished-at="2020-07-29T12:19:48 IST" duration-ms="17593">
       <class name="testCases_POM.TC_Login_001">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases_POM.TC_Login_001@6193932a]" started-at="2020-07-26T14:47:26 IST" name="setUp" finished-at="2020-07-26T14:47:32 IST" duration-ms="5918" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases_POM.TC_Login_001@12b0404f]" started-at="2020-07-29T12:19:30 IST" name="setUp" finished-at="2020-07-29T12:19:36 IST" duration-ms="6008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:testCases_POM.TC_Login_001@6193932a]" started-at="2020-07-26T14:47:32 IST" name="loginTest" finished-at="2020-07-26T14:47:51 IST" duration-ms="18671" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:testCases_POM.TC_Login_001@12b0404f]" started-at="2020-07-29T12:19:36 IST" name="loginTest" finished-at="2020-07-29T12:19:47 IST" duration-ms="10795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases_POM.TC_Login_001@6193932a]" started-at="2020-07-26T14:47:51 IST" name="closeBrowser" finished-at="2020-07-26T14:47:51 IST" duration-ms="688" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases_POM.TC_Login_001@12b0404f]" started-at="2020-07-29T12:19:47 IST" name="closeBrowser" finished-at="2020-07-29T12:19:48 IST" duration-ms="736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

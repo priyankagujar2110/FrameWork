@@ -10,7 +10,7 @@ public class ReadDataFromExcel {
 
 	public static void main(String[] args) throws IOException {
 
-		//first new commit in git
+		//first new commit
 		// To open excel file in read/input mode-
 		FileInputStream file = new FileInputStream("C:\\Users\\rahul\\iCloudDrive\\Backup\\Excel.sbi.xlsx");
 		

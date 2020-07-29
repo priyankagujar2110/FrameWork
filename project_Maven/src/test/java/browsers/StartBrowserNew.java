@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -28,16 +29,23 @@ public class StartBrowserNew {
 		}
 		else if (browserName.equals("IE"))
 		{
+			DesiredCapabilities caps = new DesiredCapabilities();
+			caps.setCapability("ignoreProtectedModeSettings", true);
+			caps.setCapability("ignoreZoomSetting", true);
 			WebDriverManager.iedriver().setup();
-            driver = new InternetExplorerDriver();
+            driver = new InternetExplorerDriver(caps);
+            
 		}
 		else 
 		{
 			System.out.println("We Dont Support this Browser");
 		}
 		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().window().maximize(); // maximize window
+		driver.manage().deleteAllCookies(); // delete all the cookies
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		
 		driver.get(appIURL);
 		

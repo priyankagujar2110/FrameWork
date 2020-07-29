@@ -15,7 +15,7 @@ public class TC_Login_001 extends Base_Class{
 		@Test
 		public void loginTest()
 		{
-			driver = StartBrowserNew.startApp(driver, "FireFox", "http://demo.guru99.com/test/login.html");
+			driver = StartBrowserNew.startApp(driver, "Chrome", "http://demo.guru99.com/test/login.html");
 			
 			LoginPage lp = PageFactory.initElements(driver, LoginPage.class);
 			lp.typeEmail("mngr269348");
